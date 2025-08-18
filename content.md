@@ -4,7 +4,7 @@
 ![Profile](assets/profile.jpg)
 
 ## About
-I manage Linux & Windows servers, automate deployments, handle AWS infra, and keep things fast and reliable.
+System Administrator with 5 years of experience in server administration and infrastructure management. Highly skilled in providing technical support to international users of an organization as well as individual users. Adept at responding to appropriate updates and solutions while maintaining organizational policies for issue resolution. 
 
 ## Skills
 - RHEL, Debian, AlmaLinux • LVM/RAID • Bash  
@@ -12,7 +12,6 @@ I manage Linux & Windows servers, automate deployments, handle AWS infra, and ke
 - Apache/Nginx • MySQL/PostgreSQL • Monitoring  
 
 ## Links
-- [Email](mailto:you@example.com)  
-- [LinkedIn](https://www.linkedin.com/in/your-handle)  
-- [GitHub](https://github.com/your-username)  
+- [Email](mailto:jacobmathew033@gmail.com)  
+- [LinkedIn](https://www.linkedin.com/in/jacob-mathew-a179a819b)  
 - [Download CV](CV.pdf)
