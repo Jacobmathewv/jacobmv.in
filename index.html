@@ -1,1 +1,130 @@
-test
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jacob Mathew — Portfolio</title>
+  <meta name="description" content="Portfolio of Jacob Mathew" />
+  <style>
+    :root{
+      --card-bg: rgba(0,0,0,.55);
+      --text: #f5f5f7;
+      --muted: #c9c9cf;
+      --accent: #a78bfa; /* soft purple */
+      --maxw: 900px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%;margin:0}
+    body{
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--text);
+      background: #000;
+    }
+    .bg{
+      position: fixed; inset: 0;
+      background: url("assets/bg.jpg") center/cover no-repeat fixed;
+      filter: brightness(.55);
+      z-index: -1;
+    }
+    .wrap{
+      min-height: 100%;
+      display: grid;
+      place-items: center;
+      padding: 40px 16px;
+    }
+    .card{
+      width: 100%;
+      max-width: var(--maxw);
+      background: var(--card-bg);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 24px;
+      padding: 28px;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 10px 30px rgba(0,0,0,.35);
+    }
+    .top{
+      display: grid;
+      grid-template-columns: 120px 1fr;
+      gap: 20px;
+      align-items: center;
+    }
+    .pfp{
+      width: 120px; height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 3px solid rgba(255,255,255,.2);
+      box-shadow: 0 6px 20px rgba(0,0,0,.35);
+      background: #222;
+    }
+    h1{margin:0 0 6px; font-size: 32px; line-height:1.2}
+    .role{color: var(--muted); margin:0 0 14px; font-size: 16px}
+    .links{display:flex; flex-wrap:wrap; gap:10px; margin:8px 0 0}
+    .chip{
+      padding: 10px 14px;
+      border-radius: 999px;
+      border: 1px solid rgba(255,255,255,.14);
+      text-decoration: none;
+      color: var(--text);
+      transition: .2s transform ease, .2s background-color ease, .2s border-color ease;
+    }
+    .chip:hover{ transform: translateY(-2px); border-color: var(--accent) }
+    .section{margin-top:24px}
+    h2{margin:0 0 10px; font-size:20px}
+    p{margin:0 0 12px; color:#ececf1}
+    ul{margin:10px 0 0 18px}
+    footer{margin-top: 18px; color: var(--muted); font-size: 13px; text-align: center}
+    @media (max-width:640px){
+      .top{ grid-template-columns: 1fr; text-align:center }
+      .pfp{ margin: 0 auto }
+    }
+  </style>
+</head>
+<body>
+  <div class="bg" role="img" aria-label="Background image"></div>
+  <main class="wrap">
+    <article class="card" aria-label="Portfolio">
+      <section class="top">
+        <img class="pfp" src="assets/profile.jpg" alt="Photo of Jacob Mathew" />
+        <div>
+          <h1>Jacob Mathew</h1>
+          <p class="role">Linux/Cloud Admin • DevOps • Server Management</p>
+          <div class="links">
+            <a class="chip" href="mailto:you@example.com">Email</a>
+            <a class="chip" href="https://www.linkedin.com/in/your-handle" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="chip" href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a>
+            <a class="chip" href="CV.pdf" target="_blank" rel="noopener">Download CV</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>About</h2>
+        <p>I manage Linux & Windows servers, automate deployments, handle AWS infra, and keep things fast and reliable.</p>
+      </section>
+
+      <section class="section">
+        <h2>Skills</h2>
+        <ul>
+          <li>RHEL, Debian, AlmaLinux • LVM/RAID • Bash</li>
+          <li>Docker & Kubernetes • CI/CD (GitHub Actions)</li>
+          <li>Apache/Nginx • MySQL/PostgreSQL • Monitoring</li>
+        </ul>
+      </section>
+
+      <section class="section">
+        <h2>Recent Work</h2>
+        <ul>
+          <li>Set up GlusterFS-backed Nextcloud with SSL and tuning.</li>
+          <li>Hardened OpenVPN server with CSF + Fail2Ban.</li>
+          <li>Deployed media hosting with optimized streaming.</li>
+        </ul>
+      </section>
+
+      <footer>© <span id="y"></span> Jacob Mathew</footer>
+    </article>
+  </main>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
