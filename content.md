@@ -45,6 +45,3 @@ Cloud Engineer & Systems Engineer | Metclouds Technologies Pvt Ltd | Kerala, Ind
 NOV 2018 – MAY 2021
 Facility Management Engineer | Data Link Consultancy | Kerala, India
 
-## 🔗 Links
-- 📧 [Email](mailto:jacobmathew033@gmail.com)  
-- 💼 [LinkedIn](https://www.linkedin.com/in/jacob-mathew-a179a819b)  
