@@ -1,7 +1,7 @@
 <div align="center">
 
 # Jacob Mathew  
-**System Admin** **Cloud Engineer**
+**System Admin** / **Cloud Engineer**
 
 <img src="assets/profile.jpg" alt="Profile" width="150" style="border-radius:50%;" />
 
