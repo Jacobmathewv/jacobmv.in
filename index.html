@@ -3,93 +3,170 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jacob Mathew - Resume</title>
+  <title>Jacob Mathew - System Administrator</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       font-family: 'Poppins', sans-serif;
+      line-height: 1.6;
       margin: 0;
       padding: 0;
-      background: #f9f9f9;
+      background: linear-gradient(135deg, #e0eafc, #cfdef3);
       color: #333;
     }
     .container {
       max-width: 900px;
-      margin: auto;
+      margin: 40px auto;
       background: #fff;
       padding: 30px;
       border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      box-shadow: 0 6px 20px rgba(0,0,0,0.1);
     }
     header {
       text-align: center;
-      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #0077b6;
     }
     header img {
       width: 140px;
       height: 140px;
       border-radius: 50%;
       margin-bottom: 15px;
-      border: 4px solid #ddd;
+      border: 4px solid #0077b6;
     }
     h1 {
       margin: 0;
-      font-size: 28px;
-      font-weight: 600;
+      font-size: 32px;
+      color: #0077b6;
     }
     h2 {
-      border-left: 5px solid #0077b6;
-      padding-left: 10px;
-      margin-top: 30px;
-      font-size: 20px;
-    }
-    .contact {
-      margin: 10px 0;
-      font-size: 14px;
-      color: #555;
-    }
-    .download {
-      margin-top: 15px;
-    }
-    .download a {
-      text-decoration: none;
-      padding: 10px 15px;
       background: #0077b6;
       color: #fff;
+      padding: 10px 15px;
+      font-size: 20px;
+      margin-top: 30px;
       border-radius: 6px;
-      margin: 5px;
-      display: inline-block;
-      transition: background 0.3s;
     }
-    .download a:hover {
-      background: #005f86;
+    h3 {
+      margin-top: 20px;
+      color: #0077b6;
     }
     ul {
+      margin: 0;
       padding-left: 20px;
+    }
+    .section p, .section li {
+      font-size: 15px;
+    }
+    .contact {
+      font-size: 14px;
+      margin-top: 10px;
+      color: #555;
+    }
+    .card {
+      background: #f9f9f9;
+      padding: 15px;
+      border-radius: 8px;
+      margin-top: 15px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+    }
+    @media (max-width: 768px) {
+      .container {
+        margin: 20px;
+        padding: 20px;
+      }
+      header img {
+        width: 120px;
+        height: 120px;
+      }
+      h1 {
+        font-size: 26px;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
     <header>
-      <img src="your-photo.png" alt="Jacob Mathew">
+      <img src="your-photo.png" alt="Jacob Mathew Photo">
       <h1>Jacob Mathew</h1>
       <p>System Administrator</p>
       <div class="contact">
-        <i class="fas fa-map-marker-alt"></i> Dubai, UAE |
-        <i class="fas fa-phone"></i> +971 543851174 |
-        <i class="fas fa-envelope"></i> jacobmathew033@gmail.com |
-        <i class="fab fa-linkedin"></i> LinkedIn
-      </div>
-      <div class="download">
-        <a href="Jacob_Mathew_CV.pdf" download><i class="fas fa-file-pdf"></i> Download PDF</a>
-        <a href="Jacob_Mathew_CV.docx" download><i class="fas fa-file-word"></i> Download DOCX</a>
+        <p>Dubai, UAE | Mob: +971 543851174 | Email: jacobmathew033@gmail.com | LinkedIn</p>
       </div>
     </header>
 
-    <!-- Your Summary, Skills, Work History, Education, etc. here -->
-    
+    <section class="section">
+      <h2>Summary</h2>
+      <div class="card">
+        <p>System Administrator with 5+ years of experience managing Linux/Windows servers and hybrid infrastructures across data centers and AWS cloud. Skilled in automation, performance optimization, and system hardening with compliance adherence. Strong background in hosting, DNS, and email services with proven success in disaster recovery and infrastructure security. Currently based in Dubai, available for immediate joining.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Professional Skills</h2>
+      <div class="card">
+        <p><strong>Operating Systems:</strong> Linux (Ubuntu, AlmaLinux, Debian, SUSE), Windows Server</p>
+        <p><strong>Cloud & Virtualization:</strong> AWS, Proxmox, KVM, VPS Management</p>
+        <p><strong>Web & Databases:</strong> Apache, Nginx, MySQL, MariaDB, WordPress, cPanel, Plesk, DirectAdmin</p>
+        <p><strong>Security:</strong> Linux OS Hardening, Windows Updates, Linux Updates, Firewalls (iptables/UFW, CSF), Fail2Ban, SSL</p>
+        <p><strong>Networking & Email:</strong> DNS, Bind, VPN, Exim, Postfix, Dovecot, SMTP</p>
+        <p><strong>Monitoring & Management:</strong> Nagios, Zabbix, Ticketing Desk, Server Provisioning, Disk Space Management, Log Analysis, Server Audit Reports</p>
+        <p><strong>Automation & Tools:</strong> Bash, Cron Jobs, Shell Scripts, Wiki Documentation, Webhosting Control Panels, Domain/User Management, Client Support, Opensource Apps Installation</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Work History</h2>
+      <div class="card">
+        <h3>JUNE 2024 – JULY 2025</h3>
+        <p><strong>System Administrator | Syntrio Technologies Pvt Ltd | Trivandrum Techno Park, Kerala, India | syntrio.in</strong></p>
+        <ul>
+          <li>Managed servers in Asia/Europe data centers and cloud platforms...</li>
+          <li>Secured systems by applying patch updates, configuring firewalls, reviewing logs, and managing access controls.</li>
+          <li>Supported global customers with hosting, DNS, and email (Exim/Postfix/SMTP)...</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>JUNE 2023 – JANUARY 2024</h3>
+        <p><strong>System Administrator | Inavan India Technologies Pvt Ltd | Kerala, India | inavan.com</strong></p>
+        <ul>
+          <li>Maintained and monitored server infrastructure in Spain-based data centers...</li>
+          <li>Implemented system hardening and security measures...</li>
+          <li>Delivered Tier-1 and Tier-2 global technical support via tickets and live chat...</li>
+        </ul>
+      </div>
+      <!-- Add remaining work history in the same card format -->
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <div class="card">
+        <p><strong>Bachelor of Science in Computer Science</strong> | June 2014 – March 2017<br>MMNSS College, Mahatma Gandhi University, Kerala</p>
+        <p><strong>Higher Secondary (Computer Science)</strong> | June 2012 – March 2014<br>Government Higher Secondary School, Chittar, Pathanamthitta, Kerala</p>
+        <p><strong>SSLC</strong> | June 2011 – March 2012<br>Government High School, Perunad, Pathanamthitta, Kerala</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Training</h2>
+      <div class="card"><p>RHCE, MCSA</p></div>
+    </section>
+
+    <section class="section">
+      <h2>Languages</h2>
+      <div class="card"><p>English: read, write, speak | Malayalam: read, write, speak</p></div>
+    </section>
+
+    <section class="section">
+      <h2>Hobbies</h2>
+      <div class="card"><p>Photography, Video Games, Gardening, Cricket</p></div>
+    </section>
   </div>
 </body>
 </html>
