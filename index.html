@@ -19,28 +19,6 @@
       padding: 30px;
       background: #fff;
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
-      position: relative;
-    }
-    /* Download Button (Icon only) */
-    .download-btn {
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      background: #000;
-      color: #fff;
-      padding: 10px;
-      border-radius: 50%;
-      font-size: 18px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 40px;
-      height: 40px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-    .download-btn:hover {
-      background: #0073e6;
     }
     .profile-pic {
       display: block;
@@ -93,32 +71,22 @@
   </style>
 </head>
 <body>
-  <div class="container" id="resume">
-    
-    <!-- Download Button (icon only) -->
-    <div class="download-btn" onclick="downloadPDF()" title="Download Resume">
-      ⬇
-    </div>
+  <div class="container">
     
     <!-- Profile Picture -->
     <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
 
-    <!-- Name and Title -->
     <h1>Jacob Mathew</h1>
     <div class="subtitle">System Administrator</div>
-
-    <!-- Contact Info -->
     <div class="contact">
       <p>Address: Dubai, UAE | Mob: +971 543851174 | 
          Email: <a href="mailto:jacobmathew033@gmail.com">jacobmathew033@gmail.com</a> | 
          <a href="https://linkedin.com" target="_blank">LinkedIn</a></p>
     </div>
 
-    <!-- Summary -->
     <h2>Summary</h2>
     <p>System Administrator with 5+ years of experience managing Linux/Windows servers and hybrid infrastructure across data centers and AWS cloud. Skilled in automation, performance optimization, and system hardening with compliance adherence. Strong background in hosting, DNS, and email services with proven expertise in disaster recovery and infrastructure security. Currently based in Dubai, available for immediate joining.</p>
 
-    <!-- Professional Skills -->
     <h2>Professional Skills</h2>
     <p><strong>Operating Systems:</strong> Linux (Ubuntu, AlmaLinux, Debian, SUSE), Windows Server<br>
     <strong>Cloud & Virtualization:</strong> AWS, Proxmox, KVM, VPS Management<br>
@@ -128,7 +96,6 @@
     <strong>Monitoring & Management:</strong> Nagios, Zabbix, Ticketing Desk, Server Provisioning, Disk Space Management, Log Analysis, Server Audit Reports<br>
     <strong>Automation & Tools:</strong> Bash, Cron Jobs, Shell Scripts, Wiki Documentation, Webhosting Control Panels, Domain/User Management, Client Support, Opensource Apps Installation.</p>
 
-    <!-- Work History -->
     <h2>Work History</h2>
 
     <div class="work-item">
@@ -136,13 +103,13 @@
       System Administrator | Syntrio Technologies Pvt Ltd | Trivandrum Techno Park, Kerala, India | 
       <a href="https://syntrio.in" target="_blank">syntrio.in</a>
       <ul>
-        <li>Managed servers in Asia/Europe data centers and cloud platforms, ensuring uptime and stability...</li>
-        <li>Secured systems by applying patch updates, configuring firewalls, reviewing logs...</li>
-        <li>Supported global customers with hosting, DNS, and email services...</li>
-        <li>Configured and tested backup and disaster recovery solutions...</li>
-        <li>Automated routine tasks with shell scripts and cron jobs...</li>
-        <li>Performed log reviews and performance analysis...</li>
-        <li>Collaborated with developers, database teams, vendors...</li>
+        <li>Managed servers in Asia/Europe data centers and cloud platforms, ensuring uptime and stability with 24/7 monitoring (Nagios), automated alerts, and regular preventive maintenance.</li>
+        <li>Secured systems by applying patch updates, configuring firewalls, reviewing logs, and managing access controls to prevent threats and maintain compliance.</li>
+        <li>Supported global customers with hosting, DNS, and email (Exim/Postfix/SMTP), including spam filtering, SSL renewals, domain setup, website hosting, website monitoring, and disk monitoring.</li>
+        <li>Configured and tested backup and disaster recovery solutions for both physical and cloud servers to safeguard data and enable rapid recovery.</li>
+        <li>Automated routine tasks with shell scripts and cron jobs, improving efficiency in system checks, reporting, and cloud resource management.</li>
+        <li>Performed log reviews and performance analysis, recommended server upgrades, and resized cloud instances to optimize speed and reduce costs.</li>
+        <li>Collaborated with developers, database teams, vendors, and cloud providers on deployments, database support, troubleshooting, and maintained detailed technical documentation.</li>
       </ul>
     </div>
 
@@ -151,12 +118,12 @@
       System Administrator | Inavan India Technologies Pvt Ltd | Kerala, India | 
       <a href="https://inavan.com" target="_blank">inavan.com</a>
       <ul>
-        <li>Maintained and monitored server infrastructure...</li>
-        <li>Implemented system hardening and security measures...</li>
-        <li>Delivered Tier-1 and Tier-2 global technical support...</li>
-        <li>Configured and maintained backup and disaster recovery systems...</li>
-        <li>Automated routine tasks using shell scripts and cron jobs...</li>
-        <li>Collaborated with developers, DBAs, clients, and data center teams...</li>
+        <li>Maintained and monitored server infrastructure in Spain-based data centers, ensuring uptime, performance, and reliability through Zabbix 24×7 monitoring, automated alerts, preventive maintenance, and system audits.</li>
+        <li>Implemented system hardening and security measures including regular patching, firewall configuration, intrusion detection, and IAM controls to protect servers against threats and compliance risks.</li>
+        <li>Delivered Tier-1 and Tier-2 global technical support via tickets and live chat, resolving hosting, DNS, and email (Exim/Postfix/SMTP) issues such as spam filtering, SSL renewals, domain propagation, and mail gateway integrations.</li>
+        <li>Configured and maintained backup and disaster recovery systems, routinely verifying data integrity and restoration processes to minimize downtime and safeguard customer data.</li>
+        <li>Automated routine tasks using shell scripts and cron jobs, reducing manual work for system health checks, reporting, and server management, while documenting SOPs, access policies, and technical workflows.</li>
+        <li>Collaborated with developers, DBAs, clients, and data center teams on deployments, database optimization, and infrastructure upgrades, providing recommendations for scaling, performance tuning, and future enhancements.</li>
       </ul>
     </div>
 
@@ -165,10 +132,10 @@
       Cloud Engineer & Systems Engineer | Metclouds Technologies Pvt Ltd | Kerala, India | 
       <a href="https://metclouds.com" target="_blank">metclouds.com</a>
       <ul>
-        <li>Managed UK-based data center and cloud infrastructure...</li>
-        <li>Strengthened system security by implementing patching, firewalls...</li>
-        <li>Provided Tier-2/3 support for DNS, hosting, and email...</li>
-        <li>Configured and tested backup/disaster recovery solutions...</li>
+        <li>Managed UK-based data center and cloud infrastructure, ensuring uptime and performance through preventive maintenance, kernel upgrades, monitoring (Zabbix/Nagios), and automated alerts.</li>
+        <li>Strengthened system security by implementing patching, firewalls (on-prem/cloud-native), VPN setup, IAM controls, intrusion detection, audits, and log analysis.</li>
+        <li>Provided Tier-2/3 support for DNS, hosting, and email (Exim/Postfix/SMTP), resolving issues such as spam filtering, SSL renewals, domain propagation, and third-party mail gateway errors.</li>
+        <li>Configured and tested backup/disaster recovery solutions, automated server tasks with shell scripts and cron jobs, and collaborated with developers/DBAs/vendors on deployments, troubleshooting, and infrastructure upgrades.</li>
       </ul>
     </div>
 
@@ -176,14 +143,13 @@
       <strong>NOV 2018 – MAY 2021</strong>
       Facility Management Engineer | Data Link Consultancy | Kerala, India
       <ul>
-        <li>Managed Linux/Windows servers (physical & virtual)...</li>
-        <li>Designed and maintained database architectures...</li>
-        <li>Provided Tier-1/2 support for server, connectivity, and application issues...</li>
-        <li>Supervised client-site IT infrastructure and AMC contracts...</li>
+        <li>Managed Linux/Windows servers (physical & virtual), ensuring uptime and compliance through 24/7 monitoring, preventive maintenance, OS hardening, firewalls, and patch management.</li>
+        <li>Designed and maintained database architectures with backups, audits, and disaster recovery procedures to ensure data integrity and business continuity.</li>
+        <li>Provided Tier-1/2 support for server, connectivity, and application issues, including ATM infrastructure (NDC switch logs), deployments, and hardware/software troubleshooting.</li>
+        <li>Supervised client-site IT infrastructure and AMC contracts, maintaining documentation for incidents, configurations, and change management.</li>
       </ul>
     </div>
 
-    <!-- Education -->
     <h2>Education</h2>
     <p><strong>Bachelor of Science in Computer Science</strong> | June 2014 – March 2017<br>
        MMNSS College, Mahatma Gandhi University, Kerala</p>
@@ -192,39 +158,14 @@
     <p><strong>SSLC</strong> | June 2011 – March 2012<br>
        Government High School, Perunad, Pathanamthitta, Kerala</p>
 
-    <!-- Training -->
     <h2>Training</h2>
     <p>RHCE, MCSA</p>
 
-    <!-- Languages -->
     <h2>Languages</h2>
     <p>English: read, write, speak | Malayalam: read, write, speak</p>
 
-    <!-- Hobbies -->
     <h2>Hobbies</h2>
     <p>Photography, Video Games, Gardening, Cricket</p>
   </div>
-
-  <!-- html2canvas + jsPDF -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-  <script>
-    async function downloadPDF() {
-      const { jsPDF } = window.jspdf;
-      const resume = document.getElementById("resume");
-
-      // Convert to canvas
-      const canvas = await html2canvas(resume, { scale: 2 });
-      const imgData = canvas.toDataURL("image/png");
-
-      // Create PDF
-      const pdf = new jsPDF("p", "mm", "a4");
-      const pdfWidth = pdf.internal.pageSize.getWidth();
-      const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
-
-      pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
-      pdf.save("Jacob_Mathew_Resume.pdf");
-    }
-  </script>
 </body>
 </html>
