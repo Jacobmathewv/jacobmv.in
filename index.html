@@ -1,37 +1,152 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Jacob Mathew — Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacob Mathew - System Administrator</title>
   <style>
     body {
-      font-family: system-ui, sans-serif;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
       margin: 0;
-      background: url("assets/bg.jpg") center/cover no-repeat fixed;
-      color: white;
+      padding: 0;
+      background: #f4f4f4;
+      color: #333;
     }
-    .card {
-      background: rgba(0,0,0,.6);
-      max-width: 800px;
-      margin: 40px auto;
+    .container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
       padding: 20px;
-      border-radius: 16px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
-    img { max-width: 150px; border-radius: 50%; }
+    header {
+      text-align: center;
+      padding-bottom: 20px;
+      border-bottom: 2px solid #333;
+    }
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+    }
+    h1 {
+      margin: 0;
+      font-size: 32px;
+    }
+    h2 {
+      background: #333;
+      color: #fff;
+      padding: 8px;
+      font-size: 20px;
+      margin-top: 20px;
+    }
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+    .section p, .section li {
+      font-size: 14px;
+    }
+    .contact {
+      font-size: 14px;
+      margin-top: 10px;
+    }
   </style>
 </head>
 <body>
-  <div class="card" id="content"></div>
+  <div class="container">
+    <header>
+      <img src="your-photo.png" alt="Jacob Mathew Photo">
+      <h1>Jacob Mathew</h1>
+      <p>System Administrator</p>
+      <div class="contact">
+        <p>Dubai, UAE | Mob: +971 543851174 | Email: jacobmathew033@gmail.com | LinkedIn</p>
+      </div>
+    </header>
 
-  <!-- Load Markdown -->
-  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-  <script>
-    fetch("content.md")
-      .then(r => r.text())
-      .then(md => {
-        document.getElementById("content").innerHTML = marked.parse(md);
-      });
-  </script>
+    <section class="section">
+      <h2>Summary</h2>
+      <p>System Administrator with 5+ years of experience managing Linux/Windows servers and hybrid infrastructures across data centers and AWS cloud. Skilled in automation, performance optimization, and system hardening with compliance adherence. Strong background in hosting, DNS, and email services with proven success in disaster recovery and infrastructure security. Currently based in Dubai, available for immediate joining.</p>
+    </section>
+
+    <section class="section">
+      <h2>Professional Skills</h2>
+      <p><strong>Operating Systems:</strong> Linux (Ubuntu, AlmaLinux, Debian, SUSE), Windows Server</p>
+      <p><strong>Cloud & Virtualization:</strong> AWS, Proxmox, KVM, VPS Management</p>
+      <p><strong>Web & Databases:</strong> Apache, Nginx, MySQL, MariaDB, WordPress, cPanel, Plesk, DirectAdmin</p>
+      <p><strong>Security:</strong> Linux OS Hardening, Windows Updates, Linux Updates, Firewalls (iptables/UFW, CSF), Fail2Ban, SSL</p>
+      <p><strong>Networking & Email:</strong> DNS, Bind, VPN, Exim, Postfix, Dovecot, SMTP</p>
+      <p><strong>Monitoring & Management:</strong> Nagios, Zabbix, Ticketing Desk, Server Provisioning, Disk Space Management, Log Analysis, Server Audit Reports</p>
+      <p><strong>Automation & Tools:</strong> Bash, Cron Jobs, Shell Scripts, Wiki Documentation, Webhosting Control Panels, Domain/User Management, Client Support, Opensource Apps Installation</p>
+    </section>
+
+    <section class="section">
+      <h2>Work History</h2>
+      <h3>JUNE 2024 – JULY 2025</h3>
+      <p><strong>System Administrator | Syntrio Technologies Pvt Ltd | Trivandrum Techno Park, Kerala, India | syntrio.in</strong></p>
+      <ul>
+        <li>Managed servers in Asia/Europe data centers and cloud platforms, ensuring uptime and stability with 24/7 monitoring (Nagios), automated alerts, and regular preventive maintenance.</li>
+        <li>Secured systems by applying patch updates, configuring firewalls, reviewing logs, and managing access controls to prevent threats and maintain compliance.</li>
+        <li>Supported global customers with hosting, DNS, and email (Exim/Postfix/SMTP), including spam filtering, SSL renewals, domain setup, website hosting, website monitoring, and disk monitoring.</li>
+        <li>Configured and tested backup and disaster recovery solutions for both physical and cloud servers to safeguard data and enable rapid recovery.</li>
+        <li>Automated routine tasks with shell scripts and cron jobs, improving efficiency in system checks, reporting, and cloud resource management.</li>
+        <li>Performed log reviews and performance analysis, recommended server upgrades, and resized cloud instances to optimize speed and reduce costs.</li>
+        <li>Collaborated with developers, database teams, vendors, and cloud providers on deployments, database support, troubleshooting, and maintained detailed technical documentation.</li>
+      </ul>
+
+      <h3>JUNE 2023 – JANUARY 2024</h3>
+      <p><strong>System Administrator | Inavan India Technologies Pvt Ltd | Kerala, India | inavan.com</strong></p>
+      <ul>
+        <li>Maintained and monitored server infrastructure in Spain-based data centers, ensuring uptime, performance, and reliability through Zabbix 24×7 monitoring, automated alerts, preventive maintenance, and system audits.</li>
+        <li>Implemented system hardening and security measures including regular patching, firewall configuration, intrusion detection, and IAM controls to protect servers against threats and compliance risks.</li>
+        <li>Delivered Tier-1 and Tier-2 global technical support via tickets and live chat, resolving hosting, DNS, and email (Exim/Postfix/SMTP) issues such as spam filtering, SSL renewals, domain propagation, and mail gateway integrations.</li>
+        <li>Configured and maintained backup and disaster recovery systems, routinely verifying data integrity and restoration processes to minimize downtime and safeguard customer data.</li>
+        <li>Automated routine tasks using shell scripts and cron jobs, reducing manual work for system health checks, reporting, and server management, while documenting SOPs, access policies, and technical workflows.</li>
+        <li>Collaborated with developers, DBAs, clients, and data center teams on deployments, database optimization, and infrastructure upgrades, providing recommendations for scaling, performance tuning, and future enhancements.</li>
+      </ul>
+
+      <h3>DEC 2021 – APRIL 2023</h3>
+      <p><strong>Cloud Engineer & Systems Engineer | Metclouds Technologies Pvt Ltd | Kerala, India | metclouds.com</strong></p>
+      <ul>
+        <li>Managed UK-based data center and cloud infrastructure, ensuring uptime and performance through preventive maintenance, kernel upgrades, monitoring (Zabbix/Nagios), and automated alerts.</li>
+        <li>Strengthened system security by implementing patching, firewalls (on-prem/cloud-native), VPN setup, IAM controls, intrusion detection, audits, and log analysis.</li>
+        <li>Provided Tier-2/3 support for DNS, hosting, and email (Exim/Postfix/SMTP), resolving issues such as spam filtering, SSL renewals, domain propagation, and third-party mail gateway errors.</li>
+        <li>Configured and tested backup/disaster recovery solutions, automated server tasks with shell scripts and cron jobs, and collaborated with developers/DBAs/vendors on deployments, troubleshooting, and infrastructure upgrades.</li>
+      </ul>
+
+      <h3>NOV 2018 – MAY 2021</h3>
+      <p><strong>Facility Management Engineer | Data Link Consultancy | Kerala, India</strong></p>
+      <ul>
+        <li>Managed Linux/Windows servers (physical & virtual), ensuring uptime and compliance through 24/7 monitoring, preventive maintenance, OS hardening, firewalls, and patch management.</li>
+        <li>Designed and maintained database architectures with backups, audits, and disaster recovery procedures to ensure data integrity and business continuity.</li>
+        <li>Provided Tier-1/2 support for server, connectivity, and application issues, including ATM infrastructure (NDC switch logs), deployments, and hardware/software troubleshooting.</li>
+        <li>Supervised client-site IT infrastructure and AMC contracts, maintaining documentation for incidents, configurations, and change management.</li>
+      </ul>
+    </section>
+
+    <section class="section">
+      <h2>Education</h2>
+      <p><strong>Bachelor of Science in Computer Science</strong> | June 2014 – March 2017<br>MMNSS College, Mahatma Gandhi University, Kerala</p>
+      <p><strong>Higher Secondary (Computer Science)</strong> | June 2012 – March 2014<br>Government Higher Secondary School, Chittar, Pathanamthitta, Kerala</p>
+      <p><strong>SSLC</strong> | June 2011 – March 2012<br>Government High School, Perunad, Pathanamthitta, Kerala</p>
+    </section>
+
+    <section class="section">
+      <h2>Training</h2>
+      <p>RHCE, MCSA</p>
+    </section>
+
+    <section class="section">
+      <h2>Languages</h2>
+      <p>English: read, write, speak | Malayalam: read, write, speak</p>
+    </section>
+
+    <section class="section">
+      <h2>Hobbies</h2>
+      <p>Photography, Video Games, Gardening, Cricket</p>
+    </section>
+  </div>
 </body>
 </html>
