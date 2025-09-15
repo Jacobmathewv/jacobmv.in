@@ -21,16 +21,22 @@
       box-shadow: 0 0 10px rgba(0,0,0,0.2);
       position: relative;
     }
+    /* Download Button (Icon only) */
     .download-btn {
       position: absolute;
       top: 20px;
       right: 20px;
       background: #000;
       color: #fff;
-      padding: 8px 14px;
-      border-radius: 6px;
-      font-size: 14px;
-      text-decoration: none;
+      padding: 10px;
+      border-radius: 50%;
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      cursor: pointer;
       transition: background 0.3s;
     }
     .download-btn:hover {
@@ -89,8 +95,10 @@
 <body>
   <div class="container" id="resume">
     
-    <!-- Download Button -->
-    <a href="#" class="download-btn" onclick="downloadPDF()">⬇ Download PDF</a>
+    <!-- Download Button (icon only) -->
+    <div class="download-btn" onclick="downloadPDF()" title="Download Resume">
+      ⬇
+    </div>
     
     <!-- Profile Picture -->
     <img src="profile.jpg" alt="Profile Picture" class="profile-pic">
@@ -122,12 +130,13 @@
 
     <!-- Work History -->
     <h2>Work History</h2>
+
     <div class="work-item">
       <strong>JUNE 2024 – JULY 2025</strong>
       System Administrator | Syntrio Technologies Pvt Ltd | Trivandrum Techno Park, Kerala, India | 
       <a href="https://syntrio.in" target="_blank">syntrio.in</a>
       <ul>
-        <li>Managed servers in Asia/Europe data centers and cloud platforms...</li>
+        <li>Managed servers in Asia/Europe data centers and cloud platforms, ensuring uptime and stability...</li>
         <li>Secured systems by applying patch updates, configuring firewalls, reviewing logs...</li>
         <li>Supported global customers with hosting, DNS, and email services...</li>
         <li>Configured and tested backup and disaster recovery solutions...</li>
@@ -194,26 +203,27 @@
     <!-- Hobbies -->
     <h2>Hobbies</h2>
     <p>Photography, Video Games, Gardening, Cricket</p>
-
   </div>
 
-  <!-- jsPDF script -->
+  <!-- html2canvas + jsPDF -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
   <script>
     async function downloadPDF() {
       const { jsPDF } = window.jspdf;
-      const doc = new jsPDF("p", "pt", "a4");
       const resume = document.getElementById("resume");
-      await doc.html(resume, {
-        callback: function (doc) {
-          doc.save("Jacob_Mathew_Resume.pdf");
-        },
-        margin: [20, 20, 20, 20],
-        x: 10,
-        y: 10,
-        autoPaging: "text",
-        windowWidth: 850
-      });
+
+      // Convert to canvas
+      const canvas = await html2canvas(resume, { scale: 2 });
+      const imgData = canvas.toDataURL("image/png");
+
+      // Create PDF
+      const pdf = new jsPDF("p", "mm", "a4");
+      const pdfWidth = pdf.internal.pageSize.getWidth();
+      const pdfHeight = (canvas.height * pdfWidth) / canvas.width;
+
+      pdf.addImage(imgData, "PNG", 0, 0, pdfWidth, pdfHeight);
+      pdf.save("Jacob_Mathew_Resume.pdf");
     }
   </script>
 </body>
